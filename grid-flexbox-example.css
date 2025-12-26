@@ -59,3 +59,26 @@ body{
 .colspan{
     grid-column: span 2;
 }
+
+/* media query when width is <= 1024px */
+@media (max-width:1024px) {
+    .container{
+        flex-direction: column;
+    }
+}
+/* media query when width is <= 800px */
+@media (max-width:800px) {
+    .container{
+        flex-direction: column;
+        padding-block:20px ;
+    }
+
+    .box{
+        grid-column:span 3 ;
+        grid-row: span 1 ;
+    }
+    .Right{
+        width: 100%;
+       grid-auto-rows:200px ;
+    }
+}
